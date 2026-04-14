@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_chat_window"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AI Assistant"
+            android:textColor="#EEEEEE"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="6dp"
+            android:text="Ready"
+            android:textColor="#00D4AA"
+            android:textSize="10sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:indeterminateTint="#00D4AA"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Close"
+            android:padding="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_close" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#22FFFFFF" />
+
+    <!-- Messages (scrollable) -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/msgContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp" />
+    </ScrollView>
+
+    <!-- Hidden input row (kept for compatibility but hidden) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btnMic"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Mic"
+            android:src="@drawable/ic_mic_off"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/inputField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:inputType="text" />
+
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Send"
+            android:src="@drawable/ic_send"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

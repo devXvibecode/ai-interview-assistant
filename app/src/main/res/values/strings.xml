@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">assistant</string>
+    <string name="status_ready">Ready</string>
+    <string name="status_listening">Listening…</string>
+    <string name="status_thinking">Thinking…</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_mic">Microphone</string>
+    <string name="btn_close">Close</string>
+    <string name="overlay_notif_title">AI Assistant Active</string>
+    <string name="overlay_notif_text">Overlay running • tap to open</string>
+</resources>
