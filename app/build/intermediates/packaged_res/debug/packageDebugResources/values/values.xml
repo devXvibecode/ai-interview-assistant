@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#00D4AA</color>
+    <color name="ai_bubble">#2D2D44</color>
+    <color name="bg_dark">#1A1A2E</color>
+    <color name="black">#000000</color>
+    <color name="error_red">#FF5252</color>
+    <color name="primary">#6C63FF</color>
+    <color name="primary_dark">#4A42B0</color>
+    <color name="success_green">#4CAF50</color>
+    <color name="surface_dark">#16213E</color>
+    <color name="text_light">#EEEEEE</color>
+    <color name="text_muted">#AAAAAA</color>
+    <color name="user_bubble">#6C63FF</color>
+    <color name="warn_orange">#FF9800</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="bubble_size">58dp</dimen>
+    <dimen name="corner_radius">14dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="msg_padding">10dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <string name="app_name">assistant</string>
+    <string name="btn_close">Close</string>
+    <string name="btn_mic">Microphone</string>
+    <string name="btn_send">Send</string>
+    <string name="overlay_notif_text">Overlay running • tap to open</string>
+    <string name="overlay_notif_title">AI Assistant Active</string>
+    <string name="status_listening">Listening…</string>
+    <string name="status_ready">Ready</string>
+    <string name="status_thinking">Thinking…</string>
+    <style name="Theme.Assistant" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/text_light</item>
+    </style>
+</resources>
