@@ -1,0 +1,49 @@
+# Android
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+*.ap_
+
+# App build outputs
+app/build/
+
+# Signing keys - NEVER commit
+*.keystore
+*.jks
+*.key
+*.p12
+
+# API Keys - NEVER commit
+gradle.properties
+local.properties
+google-services.json
+secrets.properties
+
+# Kotlin
+*.class
+*.jar
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Temp
+tmp/
+temp/
