@@ -1,5 +1,3 @@
-Paste this directly into your `README.md` file:
-
 ```
 <div align="center">
 
